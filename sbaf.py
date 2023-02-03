@@ -20,6 +20,9 @@ inpf_liss = r'D:\Aerosol Modelling\Aerosol\Output\LISS III\226922421'
 inpf_ref = r'D:\Aerosol Modelling\Aerosol\Output\S2A1C\T43RGM_Delhi_2021\T43RGM_2021-11-25_Delhi\Test'
 
 ''' ------------------------------------------------------------------------------------------------------------------ '''
+import rasterio, os, re, math, glob
+from osgeo import gdal, osr
+import numpy as np
 
 def meta(inpf, keyword):
     
